@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8      // 3 power of 2
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144 
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a millia millia millia millia millia milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+undefined method
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+no implicit conversion of Integer into String
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+no implicit conversion of Integer into String (TypeError)
 ```
 
 ### Truthiness and Falsiness
@@ -55,10 +55,10 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[---] false
 [ ] 0
 [ ] ""
-[ ] null
+[---] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nothing
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+undefined local variable or method `no_name' for main:Object
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: 100
 ```
 
 ### Conditionals
@@ -134,10 +134,24 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+i = 0
+loop do
+    i += 1
+    if i == 100
+        break       # this will cause execution to exit the loop
+    end
+
+    if i % 3 == 0 && i % 5 == 0
+        /i = "FizzBuzz"/
+        print 'FizzBuzz'+ " ,"
+    elsif i % 3 == 0 
+        print 'Fizz'+ " ,"
+    elsif i % 5 == 0
+        print 'Buzz'+ " ,"
+    else
+        print i.to_s + " ,"
+    end
+end
   ```
 
 </details>
