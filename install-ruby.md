@@ -36,10 +36,10 @@ brew install rbenv
 rbenv install -l
 
 # Find the latest one that looks like:
-# 2.6.1
+# 2.6.5
 # that DOES NOT have a -dev or -rc, but a -p is OK
-# At the current time, the latest one is 2.6.1
-rbenv install 2.6.1
+# At the current time, the latest one is 2.6.5
+rbenv install 2.6.5
 # This takes awhile!
 ```
 ## Install Ruby on Windows OS
