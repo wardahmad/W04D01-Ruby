@@ -43,7 +43,8 @@ rbenv install 2.6.1
 # This takes awhile!
 ```
 ## Install Ruby on Windows OS
-Download intsaller from [here](https://www.ruby-lang.org/en/downloads/).
+Download intsaller from [here](https://www.ruby-lang.org/en/downloads/). <br>
+Latest version is 2.6.5
 
 ## Have the correct Ruby running (continued)
 
